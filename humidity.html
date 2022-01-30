@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>WeatherPy Analysis</title>
+  <title>Humidity Analysis</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -32,44 +32,38 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="data.html">Data</a>
-        </li>
+         </li>
       </ul>
     </div>
   </nav>
 
   <div class='container py-md-2 px-md-3 py-sm-0'>
-    <div class="row justify-content-md-center">
+    <div class='row'>
       <div class='box col-sm-12 col-md-6'  style = 'background-color: white;'>
-        <h2 class = "pt-4 pl-2" style="color: rgb(74, 170, 165)">Summary: Latitude vs X</h2>
+        <h2 class = "pt-4 pl-2" style="color: rgb(74, 170, 165)">Summary: Latitude vs Humidity</h2>
         <hr></hr>
         <div class = 'row'>
           <div class='clearfix'>
             <div class='col-6'>
-              <img class='float-left img-fluid' src='./Resources/assets/images/Fig1.png' alt='City Latitude vs Max Temperature'></img>
+              <img class='float-left img-fluid' src='./Resources/assets/images/Fig2.png' alt='City Latitude vs Humidity'></img>
             </div>
             <div>
               <p class='px-4 py-2'>
-                600+ cities were randomly selected using the Citypy API. The cities were then run through OpenWeatherMap API and the Latitude, Longtitude, Max Temperature, Humidty, Cloudiness, Wind Speed, Country and Date/Time of the reading for each location were collected and stored into a dictionary. This dictionary was converted into a DataFrame and analysed using MatPlotLib.
-              </p>
-              <p class='px-4 py-2'>
-                Multiple scatterplots were created from the dataset, comparing Latitude against Max Temperature, Humidity, Cloudiness and Wind Speed, which can be viewed here and analysed closer by selecting the visualisation in the right panel. Further, the 'Comparison' page is available to view all plots on one page. 
-              </p>
-              <p class='px-4 py-2'>
-                The Dataset we used is available on the 'Data' page.
+                There's a lot of variance between +20 and +40 latitude, with % Humidity ranging from less than 20% up to just above 80%, there's a similar spread at -20 latitude, and most other areas of the plot is majority of datapoints placed between 60 - 100%
               </p>
             </div>
           </div>
         </div>
       </div> 
       <div class='box offset-md-1 col-sm-12 col-md-4'  style = 'background-color: white;'>
-        <h2 class = "pt-4 pl-2" style="color: rgb(74, 170, 165)">Visualisations</h2>
+        <h2 class = "pt-4 pl-2  text-start" style="color: rgb(74, 170, 165)">Visualisations</h2>
         <hr></hr>
           <div class='row p-1'>
             <div class='col-md-6 col-3'>
               <a href='max_temp.html'><img class='img-fluid' src='./Resources/assets/images/Fig1.png' alt='City Latitude vs Max Temperature'></img>
             </a></div>
             <div class='col-md-6 col-3'>
-              <a href='humidity.html'><img class='img-fluid' src='./Resources/assets/images/Fig2.png' alt='City Latitude vs Humidity'></img>
+              <a href='humidity.html'><img class='img-fluid img-thumbnail' src='./Resources/assets/images/Fig2.png' alt='City Latitude vs Humidity'></img>
             </a></div>
             <div class='col-md-6 col-3'>
               <a href='cloudiness.html'><img class='img-fluid' src='./Resources/assets/images/Fig3.png' alt='City Latitude vs Cloudiness'></img>

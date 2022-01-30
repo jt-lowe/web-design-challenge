@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>WeatherPy Analysis</title>
+  <title>Cloudiness Analysis</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -38,31 +38,28 @@
   </nav>
 
   <div class='container py-md-2 px-md-3 py-sm-0'>
-    <div class="row justify-content-md-center">
+    <div class='row'>
       <div class='box col-sm-12 col-md-6'  style = 'background-color: white;'>
-        <h2 class = "pt-4 pl-2" style="color: rgb(74, 170, 165)">Summary: Latitude vs X</h2>
+        <h2 class = "pt-4 pl-2" style="color: rgb(74, 170, 165)">Summary: Latitude vs Cloudiness</h2>
         <hr></hr>
         <div class = 'row'>
           <div class='clearfix'>
             <div class='col-6'>
-              <img class='float-left img-fluid' src='./Resources/assets/images/Fig1.png' alt='City Latitude vs Max Temperature'></img>
+              <img class='float-left img-fluid' src='./Resources/assets/images/Fig3.png' alt='City Latitude vs Cloudiness'></img>
             </div>
             <div>
               <p class='px-4 py-2'>
-                600+ cities were randomly selected using the Citypy API. The cities were then run through OpenWeatherMap API and the Latitude, Longtitude, Max Temperature, Humidty, Cloudiness, Wind Speed, Country and Date/Time of the reading for each location were collected and stored into a dictionary. This dictionary was converted into a DataFrame and analysed using MatPlotLib.
+                The most interesting thing about this plot is that it has similarities with the Humidity plot. The same ranges of low humidity (~ -40 to -20 latitude and 20 to 40 latitude) reflect with little cloudiness.
               </p>
               <p class='px-4 py-2'>
-                Multiple scatterplots were created from the dataset, comparing Latitude against Max Temperature, Humidity, Cloudiness and Wind Speed, which can be viewed here and analysed closer by selecting the visualisation in the right panel. Further, the 'Comparison' page is available to view all plots on one page. 
-              </p>
-              <p class='px-4 py-2'>
-                The Dataset we used is available on the 'Data' page.
+                This can be expected as humidity is due to closer H2O molecules, which is also how clouds are formed.
               </p>
             </div>
           </div>
         </div>
       </div> 
       <div class='box offset-md-1 col-sm-12 col-md-4'  style = 'background-color: white;'>
-        <h2 class = "pt-4 pl-2" style="color: rgb(74, 170, 165)">Visualisations</h2>
+        <h2 class = "pt-4 pl-2  text-start" style="color: rgb(74, 170, 165)">Visualisations</h2>
         <hr></hr>
           <div class='row p-1'>
             <div class='col-md-6 col-3'>
@@ -72,10 +69,10 @@
               <a href='humidity.html'><img class='img-fluid' src='./Resources/assets/images/Fig2.png' alt='City Latitude vs Humidity'></img>
             </a></div>
             <div class='col-md-6 col-3'>
-              <a href='cloudiness.html'><img class='img-fluid' src='./Resources/assets/images/Fig3.png' alt='City Latitude vs Cloudiness'></img>
+              <a href='cloudiness.html'><img class='img-fluid img-thumbnail' src='./Resources/assets/images/Fig3.png' alt='City Latitude vs Cloudiness'></img>
             </a></div>
             <div class='col-md-6 col-3'>
-              <a href='wind_speed.html'><img class='img-fluid' src='./Resources/assets/images/Fig4.png' alt='City Latitude vs Wind Speed'></img>
+              <a href='wind_speed.html'><img class='img-fluid ' src='./Resources/assets/images/Fig4.png' alt='City Latitude vs Wind Speed'></img>
             </a></div>
           </div>
         </div>
