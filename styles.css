@@ -1,8 +1,0 @@
-.navbar-expand-lg {background-color: white;}
-
-@media(max-width: 768px){
-
-    .navbar-expand-lg {background-color: rgb(74,170,165);
-                    color: white};
-
-}

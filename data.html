@@ -3,47 +3,70 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Data</title>
+  <title>
+    Data
+  </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  </link>
 </head>
+
+
 <body class = 'bg-light'>
     <nav class="navbar pt-0 pb-0 navbar-expand-lg navbar-light" style="background-color:white">
-        <a class="navbar-brand d-inline p-2 ml-4 text-white" style="background-color: rgb(74, 170, 165)" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand d-inline p-2 ml-4 text-white" style="background-color: rgb(74, 170, 165)" href="index.html">
+        Latitude
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plot
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-            <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comparisons.html">Comparisons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plot
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="max_temp.html">
+                Max Temperature
+              </a>
+              <a class="dropdown-item" href="humidity.html">
+                Humidity
+              </a>
+              <a class="dropdown-item" href="cloudiness.html">
+                Cloudiness
+              </a>
+              <a class="dropdown-item" href="wind_speed.html">
+                Wind Speed
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">
+              Comparisons
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">
+              Data
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <div class='container-fluid py-md-4 py-sm-0'>
-    <div class="row justify-content-around">
-    <div class="box p-md-4"  style = 'background-color: white;'>
-      <h1 class = "pt-2 pl-2" style="color: rgb(74, 170, 165)">Data</h1>
-      <p class = 'ml-4'>The table below contains the data which was used to plot our visualisations</p>
-      <hr></hr>
-          <table class="table-sm table-responsive table-striped">
+    <div class="container p-md-5 p-sm-0">
+      <div class='box p-2' style = 'background-color: white;'>
+        <h1 class = "pt-2 pl-2" style="color: rgb(74, 170, 165)">
+        Data
+      </h1>
+      <p class = 'ml-4'>
+        The table below contains the data which was used to plot our visualisations
+      </p>
+      <hr>
+      </hr>
+          <table class="table table-responsive table-striped">
             <thead>
               <tr style="text-align: left;">
                 <th>City_ID</th>
